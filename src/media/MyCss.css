@@ -1,0 +1,22 @@
+.bg-gradient1{
+
+    background-color:#fff099;
+    background-image:
+    radial-gradient(at 21% 69%, hsla(283,73%,65%,1) 0px, transparent 50%),
+radial-gradient(at 29% 10%, hsla(287,99%,61%,1) 0px, transparent 50%),
+radial-gradient(at 43% 78%, hsla(340,65%,77%,1) 0px, transparent 50%),
+radial-gradient(at 41% 82%, hsla(270,75%,60%,1) 0px, transparent 50%),
+radial-gradient(at 98% 77%, hsla(258,86%,67%,1) 0px, transparent 50%),
+radial-gradient(at 79% 58%, hsla(353,79%,68%,1) 0px, transparent 50%),
+radial-gradient(at 47% 70%, hsla(219,64%,74%,1) 0px, transparent 50%);
+}
+
+.bg-user-header{
+    background: #40fbc4;
+     background-image: 
+     radial-gradient(at 19.0% 97.0%, hsl(38, 51%, 43%) 0px, transparent 50%),
+       radial-gradient(at 46.0% 6.0%,hsl(217, 54%, 33%) 0px, transparent 50%),
+         radial-gradient(at 97.0% 68.0%,hsl(233, 81%, 41%) 0px, transparent 50%),
+          radial-gradient(at 60.0% 5.0%, hsl(257, 40%, 52%) 0px, transparent 50%),
+          radial-gradient(at 62.0% 15.0%, hsl(226, 80%, 37%) 0px, transparent 50%)
+}

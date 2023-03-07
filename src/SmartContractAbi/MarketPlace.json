@@ -1,0 +1,356 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "tokenID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_NFTaddress",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_tokenOwner",
+				"type": "address"
+			}
+		],
+		"name": "buyNFT",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "tokenID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_NFTaddress",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_tokenOwner",
+				"type": "address"
+			},
+			{
+				"internalType": "bool",
+				"name": "status",
+				"type": "bool"
+			}
+		],
+		"name": "changeListedForAuctionStatus",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "tokenID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_price",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_NFTaddress",
+				"type": "address"
+			}
+		],
+		"name": "listNFT",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_NFTaddress",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "tokenId",
+				"type": "uint256"
+			}
+		],
+		"name": "unlistgiven",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "tokenId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_NFTaddress",
+				"type": "address"
+			}
+		],
+		"name": "unlistNFT",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "tokenID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_price",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_NFTaddress",
+				"type": "address"
+			}
+		],
+		"name": "updatePriceOfNFT",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "tokenID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_NFTaddress",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_tokenOwner",
+				"type": "address"
+			}
+		],
+		"name": "isListedForAuction",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "tokenID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_NFTaddress",
+				"type": "address"
+			}
+		],
+		"name": "isNFTlisted",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "listAllAvailableNFTs",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "NFTSource",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "isListed",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "availableForAuction",
+						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "URI",
+						"type": "string"
+					}
+				],
+				"internalType": "struct MyMarketPlace.tokenInfo[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_NFTaddress",
+				"type": "address"
+			}
+		],
+		"name": "listAllofNFTsource",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "NFTSource",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "isListed",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "availableForAuction",
+						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "URI",
+						"type": "string"
+					}
+				],
+				"internalType": "struct MyMarketPlace.tokenInfo[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_address",
+				"type": "address"
+			}
+		],
+		"name": "nftListOfUser",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "NFTSource",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "isListed",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "availableForAuction",
+						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "URI",
+						"type": "string"
+					}
+				],
+				"internalType": "struct MyMarketPlace.tokenInfo[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
